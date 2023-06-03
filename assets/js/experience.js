@@ -90,6 +90,15 @@ document.addEventListener("DOMContentLoaded", showCards);
 
 const hackathonsection = document.querySelector(".hackathon-section");
 const mentor = [
+ 
+   {
+    title: "Trash to Treasure- cpcb.gov.in",
+    subtitle: "Finalist",
+    image: "assets/images/experience-page/cpcb-logo.jpg",
+    desp: " ",
+    href: "https://cpcb.nic.in/shortlisted-participants/",
+  },
+  
   {
     title: "NFT Hacks",
     subtitle: "Participant",
