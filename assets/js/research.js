@@ -3,6 +3,26 @@
 const researchTable = document.querySelector(".main");
 
 const research = [
+  
+   {
+    title: "A Survey on Blockchain and Cryptocurrency-Based Systems",
+    authors:
+      "Atharva Deshmukh, Hariket Sukesh Kumar Sheth, Pratap Dnyandeo Pawar, Amit Kumar Tyagi",
+    conferences:
+      "Book: Handbook of Research on Blockchain Technology and the Digitalization of the Supply Chain",
+    researchYr: 2023,
+    citebox: "popup1",
+    image: "assets/images/research-page/A Survey on blockchain & cryptocurrency based systems.jpeg",
+    citation: {
+      vancouver:
+        "Deshmukh, A., Sheth, H. S., Pawar, P. D., & Tyagi, A. K. (2023). A Survey on Blockchain and Cryptocurrency-Based Systems. In T. Najar, Y. Najar, & A. Aloui (Eds.), Handbook of Research on Blockchain Technology and the Digitalization of the Supply Chain (pp. 364-397). IGI Global. https://doi.org/10.4018/978-1-6684-7455-6.ch018",
+    },
+    abstract:
+      "Projects, facilities, services, and gadgets are attracting more people as life speeds up. Blockchain and cryptocurrency systems are trending worldwide. Blockchain interests everyone with technology. They make an interesting transaction medium because they have no single powerful source. Cryptocurrencies are vital financial software platforms. Mining is crucial to its decentralised information ledger dataset. Mining adds transaction data to the chain, a decentralised ledger that lets users securely agree on actions. In 2008, Santoshi Nakamoto tried to use blockchain as a restricted ledger for bitcoin, the most successful cryptocurrency. It's unlike the internet. This chapter will discuss blockchain security, cryptocurrency fraud, cyberattacks, etc. This chapter identifies cryptocurrency blockchain threats and proposes solutions. This chapter reviews and analyses top-cited articles to reach a conclusion. In this chapter, strengths and threats of cryptocurrency and their emergence in the internet-connected financial payments in the futuristic economic world will be discussed.",
+    absbox: "absPopup1",
+  },
+
+  
   {
     title: "Recent Trends for Smart Environments With AI and IoT-Based Technologies",
     authors:
