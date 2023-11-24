@@ -7,8 +7,8 @@ const exp = [
   {
     title: "Game Developer Intern",
     cardImage: "assets/images/experience-page/Akiyam.png",
-    place: "Google Developer Students Club, VIT Bhopal",
-    time: "(Jan, 2022 - July 2022)",
+    place: "Akiyam Solutions Private Limited",
+    time: "(Feb, 2023 - Oct 2023)",
     desp: "<li>Developed intricate game maps and devised engaging player interaction strategies using Unreal Engine 5.1 as a Game Developer Intern.</li> <li>Delivered two refined game maps after extensive learning and practice, showcasing competence in utilizing Unreal Engine 5.1 for immersive gaming experience.</li>",
   },
 
