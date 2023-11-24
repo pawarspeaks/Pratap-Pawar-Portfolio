@@ -6,6 +6,14 @@ const projectcards = document.querySelector(".projectcards");
 // Array of object for projects
 const projects = [
   {
+    title: "Tech Nexus",
+    cardImage: "assets/images/project-page/TechNexus.png",
+    description: "TechNexus Events, a global tech event hub! find curated events, add, and discover a diverse range of tech events around the world.TechNexus is driven towards providing catalogs of technical events throughout the world.",
+    tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
+    Previewlink: "https://devcode-technexus.vercel.app/" ,
+    Githublink: "https://github.com/pawarspeaks/TechNexus",
+  },
+  {
     title: "UPRAISE",
     cardImage: "assets/images/project-page/upraise.png",
     description: "A startup incubator with some extraordinary features to make the process of building a unicorn a bit easier!✨",
@@ -14,16 +22,8 @@ const projects = [
     Githublink: "https://github.com/pawarspeaks/UPRAISE",
   },
   {
-    title: "REDUX",
-    cardImage: "assets/images/project-page/redux.svg",
-    description: "Is a website which will gives updates about new tech related events, new courses which will definitely helps students and also gives update about new Internships.",
-    tagimg: "https://image.flaticon.com/icons/png/512/643/643350.png",
-    Previewlink: "https://aditya-mohite.github.io/REDUX/",
-    Githublink: "https://github.com/pawarspeaks/REDUX",
-  },
-  {
     title: "Tripify",
-    cardImage: "assets/images/project-page/flappybird.png",
+    cardImage: "assets/images/project-page/tripify.png",
     description: "Flappy bird game built using React.js",
     tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
     Previewlink: "",

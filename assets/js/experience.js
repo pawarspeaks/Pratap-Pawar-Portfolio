@@ -5,11 +5,19 @@ AOS.init();
 const experiencecards = document.querySelector(".experience-cards");
 const exp = [
   {
+    title: "Game Developer Intern",
+    cardImage: "assets/images/experience-page/Akiyam.png",
+    place: "Google Developer Students Club, VIT Bhopal",
+    time: "(Jan, 2022 - July 2022)",
+    desp: "<li>Developed intricate game maps and devised engaging player interaction strategies using Unreal Engine 5.1 as a Game Developer Intern.</li> <li>Delivered two refined game maps after extensive learning and practice, showcasing competence in utilizing Unreal Engine 5.1 for immersive gaming experience.</li>",
+  },
+
+  {
     title: "Outreach Team Member",
     cardImage: "assets/images/experience-page/GDSCVITB.jpg",
     place: "Google Developer Students Club, VIT Bhopal",
     time: "(Jan, 2022 - July 2022)",
-    desp: "<li>Worked to bring in sponsorships and Community partners from various universities and large communities, for the events and workshops conducted by GDSC.</li><li>Handled the discord community server and made some changes for the club</li>",
+    desp: "<li>Worked to bring in sponsorships and Community partners from various universities and technical communities, for the events and workshops conducted by GDSC. </li><li>Handled the Discord server for the GDSC during my tenure</li>",
   },
  
 
@@ -94,7 +102,7 @@ const mentor = [
    {
     title: "Trash to Treasure- cpcb.gov.in",
     subtitle: "Finalist",
-    image: "assets/images/experience-page/cpcb-logo.jpg",
+    image: "assets/images/experience-page/cpcb-logo.jpeg",
     desp: " ",
     href: "https://cpcb.nic.in/shortlisted-participants/",
   },
