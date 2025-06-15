@@ -5,23 +5,35 @@ AOS.init();
 const experiencecards = document.querySelector(".experience-cards");
 const exp = [
   {
-    title: "Game Developer Intern",
-    cardImage: "assets/images/experience-page/Akiyam.png",
-    place: "Akiyam Solutions Private Limited",
-    time: "(Feb, 2023 - Oct 2023)",
-    desp: "<li>Developed intricate game maps and devised engaging player interaction strategies using Unreal Engine 5.1 as a Game Developer Intern.</li> <li>Delivered two refined game maps after extensive learning and practice, showcasing competence in utilizing Unreal Engine 5.1 for immersive gaming experience.</li>",
+    title: "Site Reliability Engineer Intern",
+    cardImage: "assets/images/experience-page/Leadsquared.png",
+    place: "LeadSquared",
+    time: "(Dec 2024 - Present)",
+    desp: "<li>Managed production incidents (P0–P3) and ensured real-time infrastructure monitoring across AWS services including EC2, RDS, OSS, SQS, and more.</li> <li>Led alert investigation, incident resolution, infrastructure tuning, and cost optimization in high-availability environments.</li> <li>Developed internal tools like PagerDuty Schedule Manager and Anomaly Detection system to automate overhead tasks and aid Root Cause Analysis.</li> <li>Enhanced system reliability by implementing proactive monitoring and observability using Grafana, CloudWatch, Site24x7, New Relic, and Loggly.</li>"
+  },
+  {
+    title: "Software Engineering Intern",
+    cardImage: "assets/images/experience-page/mojaloop.jpg",
+    place: "Mojaloop Foundation",
+    time: "(Jun 2024 - Sep 2024)",
+    desp: "<li>Developed a service demo of Mojaloop’s Payment Initiation Service Provider, potentially reducing onboarding time by 30%.</li> <li>Collaborated with mentors of DMP 2024 on Mojaloop's PISP system, gaining skills in Microservices, Docker, and APIs.</li> <li>Contributed to scalable financial inclusion for underserved communities globally, simplifying adoption of Mojaloop's system.</li>",
   },
 
   {
-    title: "Outreach Team Member",
-    cardImage: "assets/images/experience-page/GDSCVITB.jpg",
-    place: "Google Developer Students Club, VIT Bhopal",
-    time: "(Jan, 2022 - July 2022)",
-    desp: "<li>Worked to bring in sponsorships and Community partners from various universities and technical communities, for the events and workshops conducted by GDSC. </li><li>Handled the Discord server for the GDSC during my tenure</li>",
+    title: "Full Stack Developer Intern",
+    cardImage: "assets/images/experience-page/clipsi.jpg",
+    place: "Clipsi.co",
+    time: "(Mar 2024 - May 2024)",
+    desp: "<li>Integrated Clipsi.co's Gen AI tech, employing MERN and OpenAI, boosting core functionality speed by 50%.</li> <li>Delivered a high-quality, production-ready AI product within a 6-week timeline, meeting stringent quality benchmarks.</li> <li>Demonstrated skills in integrating advanced AI models, enhancing overall product functionality up to 90%.</li>",
   },
- 
 
-
+  {
+    title: "Game Developer Intern",
+    cardImage: "assets/images/experience-page/Akiyam.png",
+    place: "Akiyam Solutions Private Limited",
+    time: "(Feb 2023 - Oct 2023)",
+    desp: "<li>Developed intricate game maps and devised engaging player interaction strategies using Unreal Engine 5.1.</li> <li>Delivered two refined game maps after extensive learning and practice, showcasing competence in utilizing Unreal Engine 5.1 for immersive gaming experiences.</li>",
+  },
 ];
 
 const showCards2 = () => {
@@ -59,16 +71,28 @@ document.addEventListener("DOMContentLoaded", showCards2);
 const volunteership = document.querySelector(".volunteership");
 const volunteershipcards = [
   {
+    title: "Dev Code",
+    cardImage: "assets/images/experience-page/3.png",
+    description:
+      "dev community dedicated to empowering aspiring devs by fostering meaningful connections, providing hands-on opportunities. (Community Builder)",
+  },
+  {
     title: "FOSSASIA",
     cardImage: "assets/images/experience-page/1.jpg",
     description:
-      "Open Technologies developed in Asia and Around the Globe (member)",
+      "Open Technologies developed in Asia and Around the Globe (Organization Team member)",
+  },
+  {
+    title: "Mojaloop Foundation",
+    cardImage: "assets/images/experience-page/Mojaloop(2).jpg",
+    description:
+      "Mojaloop Foundation is a non-profit organization that promotes financial inclusion through open-source payment solutions. Contributed as an open-source developer and intern under DMP 2024, working on Mojaloop’s PISP system to enhance financial inclusion through scalable, open-source digital payment solutions.",
   },
   {
     title: "DEVs Dungeon",
     cardImage: "assets/images/experience-page/2.jpg",
     description:
-      "Open Learning Community connecting Students, Mentors, Job Seekers and Recruiters from across the world!     (member)",
+      "Open Learning Community connecting Students, Mentors, Job Seekers and Recruiters from across the world! (Community Manager)",
   },
  
 
@@ -99,30 +123,89 @@ document.addEventListener("DOMContentLoaded", showCards);
 const hackathonsection = document.querySelector(".hackathon-section");
 const mentor = [
  
-   {
-    title: "Trash to Treasure- cpcb.gov.in",
-    subtitle: "Finalist",
-    image: "assets/images/experience-page/cpcb-logo.jpeg",
-    desp: " ",
-    href: "https://cpcb.nic.in/shortlisted-participants/",
-  },
-  
   {
-    title: "NFT Hacks",
-    subtitle: "Participant",
-    image: "assets/images/experience-page/uplift.png",
-    desp: " ",
-    href: "https://uplift.girlscript.tech/",
+    title: "ATMECS Global - GEN AI Hackathon",
+    subtitle: "🤖 National Finalist",
+    image: "assets/images/experience-page/atmecs.png",
+    desp: "Top 12 of 4900+ Teams (2024)",
+    href: "https://www.hackerearth.com/challenges/hackathon/atmecs-hackathon-2024/",
+    target: "_blank"
   },
-  
   {
-    title: "NFT Hacks",
-    subtitle: "Participant",
-    image: "assets/images/experience-page/electrothon.png",
-    desp: " ",
-    href: "https://uplift.girlscript.tech/",
+    title: "Rakuten - Rakathon 2024",
+    subtitle: "🚀 Grand Finalist",
+    image: "assets/images/experience-page/rakathon2024.png",
+    desp: "Top 100 of 8900+ Teams (2024)",
+    href: "https://corp.rakuten.co.in/rakathon-2024/",
+    target: "_blank"
   },
+  {
+    title: "GE Healthcare - Precision Care Challenge",
+    subtitle: "⚕️ National Finalist",
+    image: "assets/images/experience-page/gehealthcare.png",
+    desp: "Top 12 of 900+ Teams (2024)",
+    href: "https://www.linkedin.com/posts/pratappawar_pcc-2024-grand-finale-ge-healthcare-activity-7216752817087123456-n4zt",
+    target: "_blank"
 
+  },
+  {
+    title: "Smart India Hackathon - AICTE",
+    subtitle: "🏅 National Finalist",
+    image: "assets/images/experience-page/sih.jpg",
+    desp: "Top 6 of 500+ Teams (2023)",
+    href: "https://www.sih.gov.in/sih2023s",
+    target: "_blank"
+  },
+  {
+    title: "Mojaloop Foundation X Samagra Governance",
+    subtitle: "💫 C4GT DMP'24 Contributor",
+    image: "assets/images/experience-page/c4gt.png",
+    desp: "INR 1 Lakh Grant Secured (2024)",
+    href: "https://codeforgovtech.in/completed-project/mojaloop/",
+    target: "_blank"
+  },
+  {
+    title: "Central Pollution Control Board",
+    subtitle: "🌱 National Finalist",
+    image: "assets/images/experience-page/cpcb-logo.jpeg",
+    desp: "Top 5 Teams across nation - Trash to Treasure (2023)",
+    href: "https://cpcb.nic.in/shortlisted-participants/",
+    target: "_blank"
+  },
+  {
+    title: "VIT UnPlugged Hackathon",
+    subtitle: "⚡ Grand Finalist",
+    image: "assets/images/experience-page/vitb.png",
+    desp: "Top 11 of 110+ Teams (2023)",
+    href: "#",
+    target: "_blank"
+
+  },
+  {
+    title: "Code Hack 2023",
+    subtitle: "🎪 Event Organizer",
+    image: "assets/images/experience-page/code-hack.jpg",
+    desp: "1200+ Participants",
+    href: "https://unstop.com/hackathons/code-hack-2023-dev-code-community-557528",
+    target: "_blank"
+
+  },
+  {
+    title: "L&T TECHgium 7.0",
+    subtitle: "🛠️ Pre-Grand Finale",
+    image: "assets/images/experience-page/techgium.png",
+    desp: "Top 175 of 4400+ Teams (Dec 2023)",
+    href: "https://ltts.techgium.com/",
+    target: "_blank"
+  },
+  {
+    title: "Google Crowdsource",
+    subtitle: "🎯 Vocalize Campaign",
+    image: "assets/images/experience-page/google-crowdsource.png",
+    desp: "Top Contributor (2022)",
+    href: "https://sowmiyeh.medium.com/vocalize-indian-languages-campaign-by-google-crowdsource-c0f753fb3984",
+    target: "_blank"
+  },
 
 ];
 

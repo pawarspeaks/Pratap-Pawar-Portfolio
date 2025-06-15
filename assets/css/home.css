@@ -68,9 +68,20 @@ body{
   position: absolute;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Press+Start+2P&display=swap');
+
+.animated-text {
+  font-family: 'Orbitron', sans-serif; 
+  font-weight: 700;
+  color: #478848;
+  letter-spacing: 1px;
+  display: inline-block;
+  position: relative;
+}
+
 .animated-text span {
   display: none;
-  line-height: 1;
+  line-height: 1.2;
 }
 
 .animated-text span.active {
@@ -78,18 +89,28 @@ body{
 }
 
 .animated-text:after {
-  content: ".";
-  display: inline;
-  width: 6px;
-  text-indent: 0;
-  background: var(--col-icon);
-  animation: blink 0.3s infinite alternate;
+  content: "█";  /* Terminal-style blinking cursor */
+  display: inline-block;
+  width: 8px;
+  margin-left: 3px;
+  background: transparent;
+  color: #6ccb6e;
+  animation: blink 0.5s infinite alternate;
 }
-.datawords{
+
+@keyframes blink {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.datawords {
   white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: 'Courier New', monospace; 
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffcc00; /* Yellowish hacker-style text */
 }
 
 @keyframes blink {

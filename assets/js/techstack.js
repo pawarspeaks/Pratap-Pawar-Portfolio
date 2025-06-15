@@ -4,55 +4,117 @@ AOS.init();
 
 const techStackCards = document.querySelector(".techstack-box");
 const techStack = [
- 
+  // === CLOUD & DEVOPS ===
   {
-    langImage: "assets/images/techstack-page/java.png",
-    langName: "Java",
-    langDesc: "<li>Intermediate level</li>",
+    langImage: "assets/images/techstack-page/aws.png",
+    langName: "Amazon Web Services",
+    langDesc: "<li>⭐⭐⭐⭐⭐ – Prod experience across EC2, RDS, Lambda, S3, SQS 🚀</li>",
   },
   {
-    langImage: "assets/images/techstack-page/python.png",
-    langName: "Python",
-    langDesc: "<li>Basic level</li>",
-  },
+    langImage: "assets/images/techstack-page/newrelic.png",
+    langName: "New Relic",
+    langDesc: "<li>⭐⭐⭐ – Used for application monitoring, metrics, and RCA insights 📈</li>",
+  },  
   {
-    langImage: "assets/images/techstack-page/html.png",
-    langName: "HTML",
-    langDesc: "<li>The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser</li>",
-  },
-  {
-    langImage: "assets/images/techstack-page/css.png",
-    langName: "CSS",
-    langDesc: "<li>Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML</li>",
-  },
-  {
-    langImage: "assets/images/techstack-page/javascript.png",
-    langName: "JavaScript",
-    langDesc: "<li>JavaScript, often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS</li>",
-  },
-  {
-    langImage: "assets/images/techstack-page/cpp.png",
-    langName: "C++",
-    langDesc: "<li>Basic level</li>",
-  },
-  {
-    langImage: "assets/images/techstack-page/bootstrap.png",
-    langName: "Bootstrap",
-    langDesc: "<li>Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development</li>",
-  },
-  {
-    langImage: "assets/images/techstack-page/react.png",
-    langName: "React",
-    langDesc: "<li>React is a free and open-source front-end JavaScript library for building user interfaces based on UI components</li>",
+    langImage: "assets/images/techstack-page/docker.png",
+    langName: "Docker",
+    langDesc: "<li>⭐⭐⭐⭐ – Used for containerizing microservices in multiple projects 🐳</li>",
   },
   {
     langImage: "assets/images/techstack-page/git.png",
     langName: "Git",
-    langDesc: "<li>Git is software for tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development.</li>",
+    langDesc: "<li>⭐⭐⭐⭐⭐ – Version control wizard 🧙, essential for SRE & DevOps</li>",
+  },
+  {
+    langImage: "assets/images/techstack-page/linux.png",
+    langName: "Linux",
+    langDesc: "<li>⭐⭐⭐⭐ – Daily driver for infra mgmt, automation & terminal work 🖥️</li>",
+  },
+  {
+    langImage: "assets/images/techstack-page/cicd.png", // make sure you have this image
+    langName: "CI/CD Pipelines",
+    langDesc: "<li>⭐⭐⭐ – Basic CI/CD knowledge, integrated in SRE pipelines ⚙️</li>",
   },
 
+  // === MONITORING & OBSERVABILITY ===
+  {
+    langImage: "assets/images/techstack-page/grafana.png",
+    langName: "Grafana",
+    langDesc: "<li>⭐⭐⭐⭐ – Real-time monitoring dashboards for infra 📊</li>",
+  },
+  {
+    langImage: "assets/images/techstack-page/aws.png",
+    langName: "AWS CloudWatch",
+    langDesc: "<li>⭐⭐⭐⭐ – Infra alerts, logs & metrics for AWS services ⏱️</li>",
+  },
+  {
+    langImage: "assets/images/techstack-page/pagerduty.png",
+    langName: "PagerDuty",
+    langDesc: "<li>⭐⭐⭐ – On-call schedules, incident response & escalation 🚨</li>",
+  },
 
+  // === BACKEND & AUTOMATION ===
+  {
+    langImage: "assets/images/techstack-page/python.png",
+    langName: "Python",
+    langDesc: "<li>⭐⭐⭐⭐ – Main language for scripting, automation & backend 🐍</li>",
+  },
+  {
+    langImage: "assets/images/techstack-page/nodejs.png",
+    langName: "Node.js",
+    langDesc: "<li>⭐⭐⭐ – Used in GPT-Locker, Chrome extension backend 🔌</li>",
+  },
+  {
+    langImage: "assets/images/techstack-page/mysql.png",
+    langName: "MySQL",
+    langDesc: "<li>⭐⭐⭐ – RDBMS used in multiple projects 📚</li>",
+  },
+  {
+    langImage: "assets/images/techstack-page/mongodb.png",
+    langName: "MongoDB",
+    langDesc: "<li>⭐⭐⭐ – Document DB used in projects like TechNexus 📄</li>",
+  },
+
+  // === FRONTEND & UI ===
+  {
+    langImage: "assets/images/techstack-page/react.png",
+    langName: "React",
+    langDesc: "<li>⭐⭐⭐⭐ – Used to build scalable UIs (TechNexus, open-source) ⚛️</li>",
+  },
+  {
+    langImage: "assets/images/techstack-page/javascript.png",
+    langName: "JavaScript",
+    langDesc: "<li>⭐⭐⭐ – Core scripting for frontend, browser extensions 💻</li>",
+  },
+  {
+    langImage: "assets/images/techstack-page/html.png",
+    langName: "HTML5",
+    langDesc: "<li>⭐⭐⭐ – Markup backbone for UIs 🧱</li>",
+  },
+  {
+    langImage: "assets/images/techstack-page/css.png",
+    langName: "CSS3",
+    langDesc: "<li>⭐⭐⭐ – Styling projects with modern layouts 🎨</li>",
+  },
+  {
+    langImage: "assets/images/techstack-page/bootstrap.png",
+    langName: "Bootstrap",
+    langDesc: "<li>⭐⭐ – Used in small-scale frontend projects 👞</li>",
+  },
+
+  // === EXTRA / MISC ===
+  {
+    langImage: "assets/images/techstack-page/bash.png",
+    langName: "Bash",
+    langDesc: "<li>⭐⭐⭐ – Infra scripts & CLI utilities for automation 💻</li>",
+  },
+  {
+    langImage: "assets/images/techstack-page/java.png",
+    langName: "Java",
+    langDesc: "<li>⭐⭐ – Academic use, not currently in primary stack ☕</li>",
+  },
 ];
+
 
 const displayTechStacksCards = () => {
   const entireCardTemplate =

@@ -3,7 +3,25 @@
 const researchTable = document.querySelector(".main");
 
 const research = [
-  
+
+  {
+    title: "The Power of Machine Learning in Forest Fire Risk Analysis and Resilience: Navigating Best Practices, Challenges, and Opportunities",
+    authors:
+      "Atharva Awatade, Pratap Pawar, D Lakshmi",
+    conferences:
+      "Book: Geospatial Technology to Support Communities and Policy: Pathways to Resiliency",
+    researchYr: "Springer 2024",
+    citebox: "popup1",
+    image: "assets/images/research-page/Geospatial Technology to Support Communities and Policy-Pathways to Resiliency.png",
+    citation: {
+      vancouver:
+        "Awatade, A., Pawar, P., Lakshmi, D. (2024). The Power of Machine Learning in Forest Fire Risk Analysis and Resilience: Navigating Best Practices, Challenges, and Opportunities. In: Ghosh, S., Kumari, M., Mishra, V.N. (eds) Geospatial Technology to Support Communities and Policy. Geotechnologies and the Environment, vol 26. Springer, Cham. https://doi.org/10.1007/978-3-031-52561-2_9",
+    },
+    abstract:
+      "Practical risk assessment and resilience planning are essential to reducing the impact of forest fires, which constitute a serious threat to populations and ecosystems all over the world. In this context, Machine Learning (ML) has become a potent tool that enables scientists and forest managers to estimate fire risks and develop effective fire prevention and recovery systems. However, using Machine Learning (ML) algorithms in decision-making raises ethical questions, and using biased data may result in incorrect predictions and ineffective tactics. This chapter investigates the benefits and drawbacks of using Machine Learning (ML) for forest fire risk and resilience, covering the different data sources and techniques used in Machine Learning (ML) for predicting forest fires. The potential benefits of using Machine Learning (ML) in forest fire risk and resilience planning will be discussed, along with a review of the …",
+    absbox: "absPopup1",
+  },
+
    {
     title: "A Survey on Blockchain and Cryptocurrency-Based Systems",
     authors:

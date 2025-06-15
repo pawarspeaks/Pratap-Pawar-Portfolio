@@ -5,35 +5,35 @@ AOS.init();
 const moocs = document.querySelector(".moocs");
 const moocscards = [
   {
-    title: "SQL Intermediate",
-    cardImage: "assets/images/education-page/sql_intermediate.png",
-    moocLink: "https://www.hackerrank.com/certificates/d4fa2b1549e6",
+    title: "AWS: Cloud Practitioner",
+    cardImage: "assets/images/education-page/AWSCloudPractitioner.png",
+    moocLink: "https://www.credly.com/badges/8650b20a-7b56-4557-930c-ecb738e0de6b/linked_in_profile",
+  },
+  {
+    title: "Google: Cloud Digital Leader",
+    cardImage: "assets/images/education-page/GoogleCDL.png",
+    moocLink: "https://www.credential.net/285e5397-8409-46f5-9f09-6b40de057a01",
+  },
+  {
+    title: "NPTEL: Cloud Computing",
+    cardImage: "assets/images/education-page/NPTELCloudComputing.png",
+    moocLink: "https://archive.nptel.ac.in/content/noc/NOC24/SEM1/Ecertificates/106/noc24-cs17/Course/NPTEL24CS17S46950014730638595.pdf",
+  },
+  {
+    title: "Oracle: Generative AI Professional",
+    cardImage: "assets/images/education-page/OracleGenAI.jpg",
+    moocLink: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=C871680AD20395FB5B2561E07DE8E57936AA09BE3D66F50A91BA147CDCB1BBF4",
   },
   {
     title: "Bits & Bytes of Computer Networking",
     cardImage: "assets/images/education-page/bits-and-bytes.png",
     moocLink: "https://coursera.org/verify/PF2WZQ2TV3FC",
   },
-  {
-    title: "Overview of Geoprocessing using Python",
-    cardImage: "assets/images/education-page/isro-python.png",
-    moocLink: "https://certificate.iirs.gov.in/",
-  },
-  {
-    title: "Google Analytics for Beginners",
-    cardImage: "assets/images/education-page/Google-analytics.png",
-    moocLink: "https://analytics.google.com/analytics/academy/certificate/G6aKau4bSuGAzMyUliv5PQ",
-  },
-  {
-    title: "Communication Strategies for a Virtual Age",
-    cardImage: "assets/images/education-page/Coursera-communication.jpeg",
-    moocLink: "https://www.coursera.org/account/accomplishments/verify/222NNWPQ9V8R",
-  },
-  
-
-
-
-
+  // {
+  //   title: "Overview of Geoprocessing using Python",
+  //   cardImage: "assets/images/education-page/isro-python.png",
+  //   moocLink: "https://certificate.iirs.gov.in/",
+  // }
 ];
 
 const experience = [
