@@ -1,5 +1,6 @@
 /* ---- particles.js config ---- */
 
+if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches && typeof particlesJS === "function") {
 particlesJS("particles-js", {
   particles: {
     number: {
@@ -94,10 +95,11 @@ particlesJS("particles-js", {
   },
   retina_detect: true,
 });
+}
 const allElements = document.querySelectorAll(".animated-text");
 
 // It checks if there is at least one element
-if (allElements.length > 0) {
+if (allElements.length > 0 && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
   //It runs the script for each found element
   allElements.forEach((element) => {
     const txtElement = element,
@@ -173,5 +175,11 @@ if (allElements.length > 0) {
         entry();
       }
     }
+  });
+}
+
+if (allElements.length > 0 && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  allElements.forEach((element) => {
+    element.textContent = element.getAttribute("data-words").split(", ")[0];
   });
 }

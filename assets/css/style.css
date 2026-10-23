@@ -173,6 +173,10 @@ html {
   scroll-behavior: smooth;
 }
 
+[id] {
+  scroll-margin-top: 5.5rem;
+}
+
 
 /*
 ------------------------------------
@@ -446,6 +450,114 @@ html[light-mode="light"] .navbar-brand:hover{
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav {
       align-items: center;
+  }
+}
+
+/* Shared responsive navigation override. It deliberately replaces the legacy
+   negative-margin mobile menu rules further up this stylesheet. */
+.site-header {
+  position: relative;
+  z-index: 1000;
+}
+
+.site-header .navbar {
+  min-height: 72px;
+  padding: 0.65rem clamp(1rem, 3vw, 2rem);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.site-header .navbar-brand {
+  margin-right: 1.25rem;
+  color: #fff;
+  font-size: clamp(1.35rem, 2.5vw, 1.8rem);
+  white-space: nowrap;
+}
+
+.site-header .nav-link {
+  border-radius: 6px;
+  color: rgba(255, 255, 255, 0.78) !important;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.site-header .nav-link:hover,
+.site-header .nav-link:focus-visible,
+.site-header .nav-link.current-link {
+  color: #fff !important;
+  background: rgba(187, 134, 252, 0.18);
+}
+
+.site-header .nav-link:focus-visible,
+.site-header .navbar-toggler:focus-visible,
+.site-header .dark_toggler:focus-visible {
+  outline: 3px solid #d8beff;
+  outline-offset: 3px;
+}
+
+@media (min-width: 1200px) {
+  .site-header .navbar-nav {
+    gap: 0.1rem;
+  }
+
+  .site-header a.nav-link {
+    padding: 0.45rem 0.58rem !important;
+  }
+
+  .site-header .dark_toggler {
+    width: 76px;
+    height: 32px;
+    margin-left: 0.55rem;
+  }
+
+  .site-header .dark_toggler:before {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .site-header .navbar-toggler {
+    margin: 0 0 0 auto;
+    padding: 0.45rem;
+  }
+
+  .site-header #navbarSupportedContent {
+    width: 100%;
+    margin: 0;
+    padding: 0.6rem 0 0.2rem;
+    height: auto;
+    text-align: left;
+    transform: none;
+  }
+
+  .site-header #navbar-content {
+    margin: 0;
+    height: auto;
+    transform: none;
+  }
+
+  .site-header .nav-item {
+    width: 100%;
+  }
+
+  .site-header .nav-link {
+    display: block;
+    padding: 0.65rem 0.75rem !important;
+  }
+
+  .site-header .dark_toggler {
+    width: 76px;
+    height: 32px;
+    margin: 0.75rem;
+  }
+
+  .site-header .dark_toggler:before {
+    width: 32px;
+    height: 32px;
+  }
+
+  .site-header .bike {
+    display: none;
   }
 }
 
@@ -920,79 +1032,6 @@ form {
 .footer hr {
   background-color: rgb(37, 51, 46);
   height: 1.5px;
-}
-
-
-/* to make the navbar open full screen on mobile */
-
-@media (max-width: 768px) {
-  .collapse navbar-collapse {
-      display: flex;
-      justify-content: center;
-  }
-  .footer {
-      padding-top: 10px;
-  }
-  #navbar-content {
-      margin-top: -200px;
-      height: 120vh;
-      text-align: center;
-      transform: translateY(25%);
-  }
-  #btnScrollToTop {
-      display: none;
-  }
-}
-
-@media (max-width: 414px) {
-  .collapse navbar-collapse {
-      display: flex;
-      justify-content: center;
-  }
-  #navbar-content {
-      margin-top: -180px;
-      height: 120vh;
-      text-align: center;
-      transform: translateY(25%);
-  }
-  #btnScrollToTop {
-      display: none;
-  }
-}
-
-@media (max-width: 375px) {
-  .collapse navbar-collapse {
-      display: flex;
-      justify-content: center;
-  }
-  #navbar-content {
-      margin-top: -180px;
-      height: 120vh;
-      text-align: center;
-      transform: translateY(25%);
-  }
-  #btnScrollToTop {
-      display: none;
-  }
-}
-
-@media (max-width: 320px) {
-  .collapse navbar-collapse {
-      display: flex;
-      justify-content: center;
-  }
-  #navbar-content {
-      margin-top: -140px;
-      height: 130vh;
-      text-align: center;
-      transform: translateY(25%);
-  }
-  .footer {
-      margin-top: 6rem;
-  }
-  #btnScrollToTop {
-      display: none;
-  }
 }
 
 
