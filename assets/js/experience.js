@@ -5,17 +5,19 @@ AOS.init();
 const experiencecards = document.querySelector(".experience-cards");
 const exp = [
   {
-    title: "Site Reliability Engineer Intern",
+    title: "Site Reliability Engineer",
     cardImage: "assets/images/experience-page/Leadsquared.png",
     place: "LeadSquared",
     time: "(Dec 2024 - Present)",
+    resumeDesp: "<li>Managed the full P0–P3 incident lifecycle—detection, investigation, mitigation, communication, and resolution—to support service reliability and SLA objectives.</li><li>Automated monitoring coverage across AWS infrastructure, improving alert visibility and incident detection reliability.</li><li>Built PagerDuty workflow automation and an automated root-cause-analysis workflow to reduce operational overhead and improve post-incident reporting.</li><li>Improved production observability and troubleshooting using Grafana, CloudWatch, New Relic, and Coralogix.</li>",
     desp: "<li>Managed production incidents (P0–P3) and ensured real-time infrastructure monitoring across AWS services including EC2, RDS, OSS, SQS, and more.</li> <li>Led alert investigation, incident resolution, infrastructure tuning, and cost optimization in high-availability environments.</li> <li>Developed internal tools like PagerDuty Schedule Manager and Anomaly Detection system to automate overhead tasks and aid Root Cause Analysis.</li> <li>Enhanced system reliability by implementing proactive monitoring and observability using Grafana, CloudWatch, Site24x7, New Relic, and Loggly.</li>"
   },
   {
-    title: "Software Engineering Intern",
+    title: "Software Engineer Intern",
     cardImage: "assets/images/experience-page/mojaloop.jpg",
     place: "Mojaloop Foundation",
     time: "(Jun 2024 - Sep 2024)",
+    resumeDesp: "<li>Developed a complete demonstration of Mojaloop’s Payment Initiation Service Provider, reducing onboarding time by approximately 30%.</li><li>Contributed to Mojaloop open source through Code for GovTech 2024, collaborating with mentors on its architecture.</li><li>Supported scalable digital-payment infrastructure that advances financial inclusion.</li>",
     desp: "<li>Developed a service demo of Mojaloop’s Payment Initiation Service Provider, potentially reducing onboarding time by 30%.</li> <li>Collaborated with mentors of DMP 2024 on Mojaloop's PISP system, gaining skills in Microservices, Docker, and APIs.</li> <li>Contributed to scalable financial inclusion for underserved communities globally, simplifying adoption of Mojaloop's system.</li>",
   },
 
@@ -39,7 +41,7 @@ const exp = [
 const showCards2 = () => {
   let output = "";
   exp.forEach(
-    ({ title, cardImage, place, time, desp }) =>
+    ({ title, cardImage, place, time, desp, resumeDesp }) =>
       (output += `        
     <div class="col gaap" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="100" data-aos-duration="400"> 
       <div class="card card1">
@@ -54,7 +56,7 @@ const showCards2 = () => {
               <span class="author">${time}</span>
             </p>
             <ol>
-              ${desp}
+              ${resumeDesp || desp}
             </ol>
           </header>
         </article>
